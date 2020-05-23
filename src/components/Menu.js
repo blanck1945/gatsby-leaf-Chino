@@ -1,6 +1,5 @@
 import React from 'react'
 import FilterBtn from './FilterBtn'
-import ItemDisplay from './ItemDisplay'
 
 import "../Css/Menu.scss"
 

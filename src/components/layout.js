@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Navbar from "../Templates/Navbar"
-import Story from "../components/Story"
 import Footer from "../Templates/Footer"
 
 import "./layout.css"
