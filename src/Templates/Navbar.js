@@ -12,7 +12,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
 
     const navDisplay = navLinks.map((el, index) =>
-        <li key={index} className="nav-item">
+        <li key={index} className="nav-item sep">
             <Link to={el.path} className="nav-link text-capitalize" activeClassName="active">
                 {el.text}
             </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <span className="navbar-toggler-icon" />
             </button>
             <div className={open ? "collapse navbar-collapse show" : "collapse navbar-collapse"}>
-                <ul className="navbar-nav mx-auto">
+                <ul className="navbar-nav mx-auto lisl">
                     {navDisplay}
                     <li className="nav-item ml-sm-5">
                         <FaCartArrowDown className="cart-icon" />

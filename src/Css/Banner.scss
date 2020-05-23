@@ -1,0 +1,25 @@
+.banner {
+  width: 60%;
+  height: 80px;
+  background-color: #7c42187c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border-top: 2px solid #6f4e377c;
+  border-bottom: 2px solid #6f4e377c;
+  border-radius: 4px;
+  .titleBanner {
+    border: 5px solid #6f4e377c;
+    width: 300px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 700;
+    letter-spacing: 0.875rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #7c4218c5;
+    color: #b6b2b0;
+  }
+}

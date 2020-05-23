@@ -7,3 +7,7 @@
     min-width: 30px;
     min-height: 10px;
 }
+
+.sep {
+    margin: auto 25px;
+}

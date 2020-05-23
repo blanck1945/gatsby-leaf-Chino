@@ -14,7 +14,7 @@ const about = (props) => {
         fluid={props.data.indexPage.childImageSharp.fluid} >
         <h1 className="title text-uppercase">Leaf && Chino</h1>
         <div className="overlay about">
-          <h2 className="slogan text-white">Sobre Nosotros</h2>
+          <h2 className="slogan text-white">Nuestra Historia</h2>
         </div>
       </BackgroundImage>
       <Story />

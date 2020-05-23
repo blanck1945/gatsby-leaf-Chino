@@ -1,0 +1,54 @@
+.menuBox {
+  background: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #6f4e37;
+  .filterBox {
+    width: 500px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6f4e37;
+    border: 1px solid #693007;
+    border-radius: 8px;
+    .filterBtn {
+      width: 100px;
+      border-radius: 4px;
+      border: 1px solid #6f4e377c;
+      height: 40px;
+      color: #d1d1d1;
+      font-weight: 700;
+      font-size: 1.1rem;
+      background-color: #7c42187c;
+      outline: none;
+    }
+    .filterBtn:hover {
+      background-color: #221810;
+    }
+    .on {
+      background-color: #221810;
+    }
+  }
+  .menuBody {
+    min-width: 60%;
+    background-color: lightgrey;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .menuDrink {
+      background-color: #7c42187c;
+      border: 2px solid #6f4e377c;
+      margin: 5px 120px;
+      max-width: 600px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}

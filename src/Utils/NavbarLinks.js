@@ -9,5 +9,9 @@ export const navLinks = [{
 {
     text: "Contact",
     path: "/contact"
+},
+{
+    text: "E-Shop",
+    path: "/shop"
 }
 ]
