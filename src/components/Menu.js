@@ -7,7 +7,6 @@ const Menu = ({ data }) => {
 
     const display = data.edges.map((el, index) =>
         <div key={index} className="menuDrink">
-            <img>{el.node.image.fixed.fluid}</img>
             <h2>{el.node.title}</h2>
             <p>{el.node.description.description}</p>
         </div>)
