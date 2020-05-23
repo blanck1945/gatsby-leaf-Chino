@@ -47,13 +47,15 @@ export const pageQuery = graphql`
           }
           price
           category
-          image{
-            fixed(width:50, height:50){
-              ...GatsbyContentfulFixed_tracedSVG
-            }
           }
         }
       }
     }
   }
 `;
+
+/*
+image{
+            fixed(width:50, height:50){
+              ...GatsbyContentfulFixed_tracedSVG
+            }*/
