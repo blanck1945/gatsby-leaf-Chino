@@ -1,0 +1,35 @@
+.story {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .storyTitle {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    color: #6f4e37;
+    font-weight: 700;
+    margin: 40px auto;
+  }
+  .storyPara {
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 450px;
+  }
+  .storyBtn {
+    margin: 30px;
+    width: 170px;
+    height: 45px;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    background-color: #ffffff;
+    color: #6f4e37;
+    border: 3px solid #a06032;
+    border-radius: 4px;
+  }
+  .storyBtn:hover {
+    background-color: #6f4e37;
+    color: #ffffff;
+  }
+}

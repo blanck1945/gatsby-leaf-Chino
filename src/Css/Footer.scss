@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  color: #ffffff;
+  outline: 6px solid #6f4e37;
+  border-top: 1px solid #555555;
+  .copyRights {
+    color: #6f4e37;
+    width: 25%;
+  }
+  .socialIcons {
+    width: 25%;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    .iconItem {
+      margin: 0 10px;
+      cursor: pointer;
+      &.fac {
+        color: #1f4699;
+      }
+      &.ins {
+        color: rgb(179, 50, 50);
+      }
+      &.twi {
+        color: rgb(29, 165, 219);
+      }
+    }
+  }
+  .credits {
+    width: 25%;
+    color: #6f4e37;
+  }
+}

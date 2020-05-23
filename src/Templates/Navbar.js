@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const navDisplay = navLinks.map((el, index) =>
         <li key={index} className="nav-item">
-            <Link to={el.path} className="nav-link text-capitalize">
+            <Link to={el.path} className="nav-link text-capitalize" activeClassName="active">
                 {el.text}
             </Link>
         </li>)

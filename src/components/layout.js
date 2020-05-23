@@ -7,19 +7,24 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import Navbar from "../Templates/Navbar"
+import Story from "../components/Story"
+import Footer from "../Templates/Footer"
 
 import "./layout.css"
-import Navbar from "../Templates/Navbar"
+import "../Css/BackgroundImage.css"
 
-const Layout = ({ children }) => (
+const Layout = ({ children }) => {
 
-  <>
-    <Navbar />
-    {children}
-  </>
-)
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  )
+}
+
 
 
 Layout.propTypes = {
@@ -27,3 +32,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+

@@ -1,3 +1,9 @@
 .icon-small {
     width: 60px;
 }
+
+.active {
+    background-color: rgb(192, 155, 133);
+    min-width: 30px;
+    min-height: 10px;
+}
