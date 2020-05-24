@@ -3,21 +3,27 @@ import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Story from "../components/Story"
+import Filosofia from "../components/about/Filosofia"
+import ShopIndex from "../components/index/shopIndex"
+import { data } from "../Utils/indexData"
+import Begin from "../components/about/Begin"
 
 
 const about = (props) => {
+  console.log(data)
   return (
     <Layout>
       <SEO title="Home" />
       <BackgroundImage className="about"
         fluid={props.data.indexPage.childImageSharp.fluid} >
-        <h1 className="title text-uppercase">Leaf && Chino</h1>
+        <h1 className="title">Leaf && Chino</h1>
         <div className="overlay about">
-          <h2 className="slogan text-white">Nuestra Historia</h2>
+          <h2 className="slogan">Nuestra Historia</h2>
         </div>
       </BackgroundImage>
-      <Story />
+      <ShopIndex data={data[2]} />
+      <Filosofia />
+      <Begin />
     </Layout>
   )
 }

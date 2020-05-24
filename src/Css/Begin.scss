@@ -1,0 +1,23 @@
+.begin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .beginBox {
+    width: 25%;
+    height: 480px;
+    margin: 45px 0;
+    .photoBegin {
+      width: 45%;
+      margin: auto 130px;
+      height: 480px;
+    }
+  }
+  .beginText {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #7a4e35;
+  }
+}

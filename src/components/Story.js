@@ -1,11 +1,10 @@
 import React from 'react'
-
 import { Link } from 'gatsby'
 import "../Css/Story.scss"
 
 const Story = () => {
     return (
-        <div className="story">
+        <div className="story" >
             <h2 className="storyTitle">Nuestra historia</h2>
             <p className="storyPara">Todo empezo hace 3 años con un cafe de por medio. Nuestros dos fundadores tomaron la desición de revolucionar
             la industria del cafe. Amantes del cafe y entusiastas de sus distintas variedades vierón un vacio que podian llenar

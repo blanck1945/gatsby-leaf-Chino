@@ -1,26 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FilterBtn from './FilterBtn'
+import MenuItemTemplate from "../components/shop/MenuItemTemplate"
 
 import "../Css/Menu.scss"
+import "../Css/filterBtn.css"
 
 const Menu = ({ data }) => {
 
-    const display = data.edges.map((el, index) =>
-        <div key={index} className="menuDrink">
-            <h2>{el.node.title}</h2>
-            <p>{el.node.description.description}</p>
-        </div>)
+    const [displayList, setDisplayList] = useState(data.edges.map(el =>
+        <MenuItemTemplate key={el.id} data={el} />))
+
+    const handlerFilter = name => {
+        if (name === "all") {
+            return setDisplayList(data.edges.map(el =>
+                <MenuItemTemplate key={el.id} data={el} />))
+        }
+        const filterList = data.edges.filter(el => el.node.category === name)
+        setDisplayList(filterList.map(el =>
+            <MenuItemTemplate key={el.id} data={el} />))
+    }
 
     return (
         <div className="menuBox">
-            <div className="filterBox">
-                <FilterBtn header={"All"} />
-                <FilterBtn header={"Coffe"} />
-                <FilterBtn header={"Tea"} />
-                <FilterBtn header={"Juice"} />
+            <div className="multi-button">
+                <FilterBtn header={"All"} func={handlerFilter} name={"all"} />
+                <FilterBtn header={"Coffe"} func={handlerFilter} name={"coffe"} />
+                <FilterBtn header={"Tea"} func={handlerFilter} name={"tea"} />
+                <FilterBtn header={"Juice"} func={handlerFilter} name={"juice"} />
             </div>
             <div className="menuBody">
-                {display}
+                {displayList}
             </div>
         </div>
     )

@@ -1,35 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 .story {
   width: 100%;
   background: #ffffff;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  .storyTitle {
-    font-size: 3.3rem;
-    text-transform: uppercase;
-    color: #6f4e37;
-    font-weight: 700;
-    margin: 40px auto;
+  .storySpace {
+    min-width: 700px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .storyTitle {
+      font-size: 3.3rem;
+      text-transform: uppercase;
+      color: #6f4e37;
+      font-weight: 700;
+      margin: 40px auto;
+    }
+    .storyPara {
+      font-size: 1.4rem;
+      text-align: center;
+      max-width: 450px;
+    }
+    .storyBtn {
+      margin: 30px;
+      width: 170px;
+      height: 45px;
+      font-size: 1.2rem;
+      padding: 4px 8px;
+      background-color: #ffffff;
+      color: #6f4e37;
+      border: 3px solid #a06032;
+      border-radius: 4px;
+    }
+    .storyBtn:hover {
+      background-color: #6f4e37;
+      color: #ffffff;
+    }
   }
-  .storyPara {
-    font-size: 1.4rem;
-    text-align: center;
-    max-width: 450px;
+  .signBox {
+    width: 30%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    .signHeader {
+      font-size: 5rem;
+      font-family: "Great Vibes", cursive;
+    }
   }
-  .storyBtn {
-    margin: 30px;
-    width: 170px;
-    height: 45px;
-    font-size: 1.2rem;
-    padding: 4px 8px;
-    background-color: #ffffff;
-    color: #6f4e37;
-    border: 3px solid #a06032;
-    border-radius: 4px;
-  }
-  .storyBtn:hover {
-    background-color: #6f4e37;
-    color: #ffffff;
+}
+.row {
+  flex-direction: row-reverse;
+  .signBox {
+    width: 30%;
+    text-align: right;
   }
 }

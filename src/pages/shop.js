@@ -15,12 +15,12 @@ const Shop = ({ data }) => {
       <SEO title="Home" />
       <BackgroundImage className="about"
         fluid={data.indexPage.childImageSharp.fluid} >
-        <h1 className="title text-uppercase">Leaf && Chino</h1>
+        <h1 className="title ">Leaf && Chino</h1>
         <div className="overlay about">
-          <h2 className="slogan text-white">Nuestros Productos</h2>
+          <h2 className="slogan ">Nuestros Productos</h2>
         </div>
       </BackgroundImage>
-      <Banner />
+      <Banner header={"Menu"} />
       <Menu data={menu} />
     </Layout>
   )
@@ -47,10 +47,15 @@ export const pageQuery = graphql`
           }
           price
           category
+          image{
+            fixed(width:50, height:50){
+              ...GatsbyContentfulFixed_tracedSVG
           }
         }
       }
   }
+}
+}
 `;
 
 /*

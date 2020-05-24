@@ -11,7 +11,7 @@ import Navbar from "../Templates/Navbar"
 import Footer from "../Templates/Footer"
 
 import "./layout.css"
-import "../Css/BackgroundImage.css"
+import "../Css/BackgroundImage.scss"
 
 const Layout = ({ children }) => {
 

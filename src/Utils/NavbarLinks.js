@@ -3,15 +3,15 @@ export const navLinks = [{
     path: "/"
 },
 {
-    text: "About",
-    path: "/about"
+    text: "E-Shop",
+    path: "/shop"
 },
 {
     text: "Contact",
     path: "/contact"
 },
 {
-    text: "E-Shop",
-    path: "/shop"
+    text: "About",
+    path: "/about"
 }
 ]

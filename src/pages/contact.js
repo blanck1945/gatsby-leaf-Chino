@@ -3,7 +3,8 @@ import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Story from "../components/Story"
+import Board from "../components/contact/Board"
+import Banner from "../components/Banner"
 
 const Contact = (props) => {
   return (
@@ -11,12 +12,13 @@ const Contact = (props) => {
       <SEO title="Home" />
       <BackgroundImage className="about"
         fluid={props.data.indexPage.childImageSharp.fluid} >
-        <h1 className="title text-uppercase">Leaf && Chino</h1>
+        <h1 className="title">Leaf && Chino</h1>
         <div className="overlay about">
-          <h2 className="slogan text-white">Cuentanos que piensas sobre nosotros</h2>
+          <h2 className="slogan">Cuentanos que piensas sobre nosotros</h2>
         </div>
       </BackgroundImage>
-      <Story />
+      <Banner header={"Our Costumers"} />
+      <Board />
     </Layout>
   )
 }
@@ -31,6 +33,6 @@ export const pageQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }
+    } 
   }
 `;

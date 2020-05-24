@@ -1,19 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 .menuBox {
-  background: rgb(224, 224, 224);
+  margin: auto;
+  margin-bottom: 20px;
   display: flex;
+  width: 80%;
+  min-height: 600px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-top: 1px solid #6f4e37;
   .filterBox {
     width: 500px;
-    height: 50px;
+    min-height: 60px;
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #6f4e37;
-    border: 1px solid #693007;
     border-radius: 8px;
     .filterBtn {
       width: 100px;
@@ -23,7 +25,7 @@
       color: #d1d1d1;
       font-weight: 700;
       font-size: 1.1rem;
-      background-color: #7c42187c;
+      background-color: #7a5d48f6;
       outline: none;
     }
     .filterBtn:hover {
@@ -34,21 +36,73 @@
     }
   }
   .menuBody {
-    min-width: 60%;
-    background-color: lightgrey;
+    width: 100%;
+    min-height: 250px;
     margin: 20px 0;
     display: grid;
     grid-template-columns: 50% 50%;
-    .menuDrink {
-      background-color: #7c42187c;
-      border: 2px solid #6f4e377c;
-      margin: 5px 120px;
-      max-width: 600px;
-      border-radius: 4px;
+    .itemBox {
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
+      width: 700px;
+      height: 200px;
+      border-radius: 8px;
+      background-color: lightgrey;
+      margin: 10px 20px;
+      .menuDrink {
+        background-color: #7c4218f6;
+        color: #dbdbdb;
+        width: 230px;
+        border-radius: 4px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: "Great Vibes", cursive;
+        .drinkTitle {
+          font-size: 2.5rem;
+          text-align: center;
+          margin-top: 25px;
+        }
+        .price {
+          font-size: 2.5rem;
+          font-weight: 700;
+          padding: 4px 6px;
+          color: #d6d6d8;
+        }
+      }
+      .menuDesc {
+        height: 160px;
+        max-width: 450px;
+        color: #2f3347d2;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.1rem;
+        letter-spacing: 0.3rem;
+        .addBox {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          .imgMenu {
+            width: 60px;
+            height: 60px;
+          }
+          .chartBtn {
+            width: 190px;
+            height: 45px;
+            border-radius: 4px;
+            border: none;
+            margin-top: 10px;
+            border: 1px solid #7c4218f6;
+          }
+          .chartBtn:hover {
+            background: #7c4218f6;
+            color: #ffffff;
+          }
+        }
+      }
     }
   }
 }

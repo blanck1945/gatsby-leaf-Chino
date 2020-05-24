@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+.bgImage {
+  min-height: 100vh;
+  .title {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #3d1600;
+    font-size: 7rem;
+    mix-blend-mode: difference;
+
+    font-family: "Great Vibes", cursive;
+  }
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: #6f4e377c;
+    color: lightgrey;
+    .slogan {
+      font-size: 3rem;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #b4b4b4;
+      font-weight: 300;
+      mix-blend-mode: color-dodge;
+      position: absolute;
+      top: 450px;
+      left: 20px;
+    }
+  }
+}
+.about {
+  min-height: 60vh;
+  .title {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #3d1600;
+    font-size: 7rem;
+    mix-blend-mode: difference;
+    font-family: "Great Vibes", cursive;
+  }
+  .slogan {
+    font-size: 3rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+    mix-blend-mode: color-dodge;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+  }
+}

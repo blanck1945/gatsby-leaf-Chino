@@ -12,9 +12,9 @@ const Footer = () => {
                 <h3>© Leaf && Chino - 2020</h3>
             </div>
             <div className="socialIcons">
-                <FaFacebook className="iconItem fac" />
-                <FaInstagram className="iconItem ins" />
-                <FaTwitter className="iconItem twi" />
+                <FaFacebook className="socialLinks fac blue" />
+                <FaInstagram className="socialLinks ins" />
+                <FaTwitter className="socialLinks twi" />
             </div>
             <div className="credits">
                 <h3>Coded By Okubo</h3>

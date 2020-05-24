@@ -3,21 +3,29 @@ import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Story from "../components/Story"
+import ShopIndex from "../components/index/shopIndex"
+import { data } from "../Utils/indexData"
 
-const IndexPage = (props) => (
-  <Layout>
-    <SEO title="Home" />
-    <BackgroundImage className="bgImage"
-      fluid={props.data.indexPage.childImageSharp.fluid} >
-      <h1 className="title text-uppercase">Leaf && Chino</h1>
-      <div className="overlay">
-        <h2 className="slogan text-white">Aroma.. Sabor.. Placer..</h2>
-      </div>
-    </BackgroundImage>
-    <Story />
-  </Layout>
-)
+const IndexPage = (props) => {
+
+  const display = data.map(el =>
+    <ShopIndex data={el} key={el.id} />
+  )
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <BackgroundImage className="bgImage"
+        fluid={props.data.indexPage.childImageSharp.fluid} >
+        <h1 className="title">Leaf && Chino</h1>
+        <div className="overlay">
+          <h2 className="slogan">Aroma.. Sabor.. Placer..</h2>
+        </div>
+      </BackgroundImage>
+      {display}
+    </Layout>
+  )
+}
 
 export default IndexPage
 
