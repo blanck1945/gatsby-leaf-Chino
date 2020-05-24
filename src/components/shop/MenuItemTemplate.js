@@ -13,10 +13,13 @@ const MenuItemTemplate = ({ data }) => {
             <div className="menuDesc">
                 <p>{data.node.description.description}</p>
                 <div className="addBox">
-                    <Img fluid={data.node.image.fixed} className="imgMenu" />
                     <button className="chartBtn">Add to Chart</button>
                 </div>
             </div> </div>)
 }
 
 export default MenuItemTemplate
+
+/*
+                    <Img fluid={data.node.image.fixed} className="imgMenu" />
+*/
