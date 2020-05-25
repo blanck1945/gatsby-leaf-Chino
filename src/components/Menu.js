@@ -7,8 +7,8 @@ import "../Css/filterBtn.css"
 
 const Menu = ({ data }) => {
 
-    const [displayList, setDisplayList] = useState(data.edges.map(el =>
-        <MenuItemTemplate key={el.id} data={el} />))
+    const [displayList, setDisplayList] = useState(data.edges.map((el, index) =>
+        <MenuItemTemplate key={index} data={el} />))
 
     const handlerFilter = name => {
         if (name === "all") {

@@ -8,9 +8,12 @@
 }
 
 body {
-    background: var(--mainWhite);
+    background: #ffffff;
+    background-color: rgb(192, 155, 133);
     color: var(--mainDark);
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    min-width: 100vh;
+    min-height: 100vh;
 }
 
 .text-yellow {

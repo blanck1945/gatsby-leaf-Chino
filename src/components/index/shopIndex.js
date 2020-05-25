@@ -26,7 +26,7 @@ const ShopIndex = ({ data }) => {
                     <button className="storyBtn">{btn}</button>
                 </Link>
             </div>
-            <div className="signBox">
+            <div className="storySpace">
                 {signDisplay}
             </div>
         </div>

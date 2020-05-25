@@ -27,7 +27,7 @@ export const data = [
     },
     {
         id: 3,
-        header: "Nuestra Historia",
+        header: "Historia",
         text: "Todo empezo hace 3 años con un cafe de por medio. El sueño de dos amigos se puso en movimiento. Ambos amantes y entusiastas del cafe, querian volver relidad su visión sobre un lugar en donde la variedad y la experiencia fuese la base.De esta amistad y su camino nace 'Leaf && Chino' - Queremos concoerte, con un cafe de por medio.",
         path: "/about",
         btn: "Nosotros",

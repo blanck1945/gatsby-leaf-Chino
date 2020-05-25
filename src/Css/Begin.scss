@@ -1,15 +1,17 @@
 .begin {
-  width: 100%;
+  width: 95%;
+  background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: auto;
   .beginBox {
     width: 25%;
     height: 480px;
     margin: 45px 0;
     .photoBegin {
       width: 45%;
-      margin: auto 130px;
+      margin: auto 5px;
       height: 480px;
     }
   }

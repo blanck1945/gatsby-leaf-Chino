@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Board from "../components/contact/Board"
 import Banner from "../components/Banner"
+import Form from "../components/contact/Form"
 
 const Contact = (props) => {
   return (
@@ -19,6 +20,7 @@ const Contact = (props) => {
       </BackgroundImage>
       <Banner header={"Our Costumers"} />
       <Board />
+      <Form />
     </Layout>
   )
 }

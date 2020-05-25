@@ -9,8 +9,9 @@
     margin-left: 10px;
     color: #3d1600;
     font-size: 7rem;
+    min-width: 300px;
+    min-height: 100px;
     mix-blend-mode: difference;
-
     font-family: "Great Vibes", cursive;
   }
   .overlay {
@@ -42,14 +43,21 @@
     mix-blend-mode: difference;
     font-family: "Great Vibes", cursive;
   }
-  .slogan {
-    font-size: 3rem;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #ffffff;
-    font-weight: 300;
-    mix-blend-mode: color-dodge;
-    position: absolute;
-    top: 450px;
-    left: 20px;
+  .overlay {
+    width: 100%;
+    height: 90vh;
+    z-index: 2;
+    background-color: #6f4e377c;
+    color: lightgrey;
+    .slogan {
+      font-size: 3rem;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #ffffff;
+      font-weight: 300;
+      mix-blend-mode: color-dodge;
+      position: absolute;
+      top: 450px;
+      left: 20px;
+    }
   }
 }

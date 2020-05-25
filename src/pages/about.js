@@ -7,6 +7,8 @@ import Filosofia from "../components/about/Filosofia"
 import ShopIndex from "../components/index/shopIndex"
 import { data } from "../Utils/indexData"
 import Begin from "../components/about/Begin"
+import Founders from "../components/about/Founders"
+import Banner from "../components/Banner"
 
 
 const about = (props) => {
@@ -24,6 +26,8 @@ const about = (props) => {
       <ShopIndex data={data[2]} />
       <Filosofia />
       <Begin />
+      <Banner header={"Our Founders"} />
+      <Founders />
     </Layout>
   )
 }

@@ -1,0 +1,42 @@
+.conta {
+  width: 95%;
+  background-color: white;
+  height: 300px;
+  margin: auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .photoFou {
+    width: 450px;
+    height: 300px;
+  }
+  .bio {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    margin-top: 35px;
+    .bioUp {
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+      .bioTitle {
+        width: 200px;
+        font-size: 1.7rem;
+        color: #7a4e35;
+        font-weight: 700;
+      }
+      .quote {
+        font-size: 1.1rem;
+        color: #7a4e35;
+      }
+    }
+    .bioPara {
+      width: 400px;
+      margin-left: 50px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.productBox {
+  width: 95%;
+  background-color: white;
+  min-height: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .productTitle {
+    font-family: "Great Vibes", cursive;
+    margin-top: 25px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #994311;
+  }
+  .productSpace {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    width: 100%;
+    justify-content: space-around;
+  }
+}

@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import ShopIndex from "../components/index/shopIndex"
 import { data } from "../Utils/indexData"
 
+import "../Css/BackgroundImage.scss"
+
 const IndexPage = (props) => {
 
   const display = data.map(el =>
@@ -28,6 +30,13 @@ const IndexPage = (props) => {
 }
 
 export default IndexPage
+
+/*
+ <div className="socialIcons">
+                <FaFacebook className="socialLinks fac" />
+                <FaInstagram className="socialLinks ins" />
+                <FaTwitter className="socialLinks twi" />
+            </div>*/
 
 export const pageQuery = graphql`
   query{

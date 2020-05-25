@@ -1,0 +1,72 @@
+.formCon {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  .formBox {
+    margin-bottom: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    .form {
+      min-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #420303;
+      align-items: center;
+      min-height: 500px;
+      z-index: 1;
+      .labelForm {
+        width: 450px;
+        font-size: 1.3rem;
+        margin: 0 auto;
+        color: rgb(136, 136, 138);
+      }
+      .inputForm {
+        height: 35px;
+        width: 450px;
+        border: none;
+        padding-left: 3px;
+        background-color: rgb(233, 233, 233);
+      }
+      .textForm {
+        width: 450px;
+        background-color: rgb(233, 233, 233);
+        border: none;
+      }
+      .btnForm {
+        width: 350px;
+        height: 35px;
+        border: none;
+        background-color: #420303;
+        color: rgb(255, 255, 255);
+      }
+      .btnForm:hover {
+        background-color: lightgrey;
+        color: black;
+        border-radius: 4px;
+        transition: 0.5s ease-in-out;
+      }
+    }
+    .invite {
+      width: 500px;
+      height: 500px;
+      display: flex;
+      background-color: #420303;
+      z-index: 7;
+      left: 380px;
+      .overlay {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 35% 35% 35%;
+        z-index: 2;
+        background-image: url("../images/invite.jpg");
+        background-position: center;
+        background-size: 900px;
+      }
+    }
+  }
+}

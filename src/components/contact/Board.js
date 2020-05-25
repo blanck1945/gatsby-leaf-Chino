@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { msg } from "../../Utils/clientMsg"
 import "../../Css/Board.scss"
 import "../../Css/ClientMsg.css"
@@ -16,6 +16,7 @@ const Board = () => {
                     </div>
                     <div className="circle">
                         <p className="clientMsg">{el.msg}</p>
+                        <h6 className="clientMsg">Opinion: <span className="score">{el.score}</span></h6>
                     </div>
                 </div>
             </div>

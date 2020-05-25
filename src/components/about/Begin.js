@@ -6,7 +6,7 @@ import "../../Css/Begin.scss"
 
 const Begin = () => {
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query{
       coffe: file(relativePath: { eq: "begin.jpg"}){
         childImageSharp {
@@ -32,22 +32,22 @@ const Begin = () => {
     }
   `)
 
-    return (
-        <div className="begin">
-            <div className="beginBox">
-                <Img fluid={data.coffe.childImageSharp.fluid} className="photoBegin" />
-            </div>
-            <h3 className="beginText">Begin</h3> (to)
-            <div className="beginBox">
-                <Img fluid={data.ideas.childImageSharp.fluid} className="photoBegin" />
-            </div>
-            <h3 className="beginText">Biuld</h3> (yours)
-            <div className="beginBox">
-                <Img fluid={data.build.childImageSharp.fluid} className="photoBegin" />
-            </div>
-            <h3 className="beginText">Ideas</h3>
-        </div>
-    )
+  return (
+    <div className="begin">
+      <div className="beginBox">
+        <Img fluid={data.coffe.childImageSharp.fluid} className="photoBegin" />
+      </div>
+      <h3 className="beginText">Begin</h3> (to)
+      <div className="beginBox">
+        <Img fluid={data.ideas.childImageSharp.fluid} className="photoBegin" />
+      </div>
+      <h3 className="beginText">Biuld</h3> (yours)
+      <div className="beginBox">
+        <Img fluid={data.build.childImageSharp.fluid} className="photoBegin" />
+      </div>
+      <h3 className="beginText">Ideas</h3>
+    </div>
+  )
 }
 
 export default Begin
