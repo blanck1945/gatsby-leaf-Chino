@@ -4,28 +4,20 @@ import { FaInstagram } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 
 
-import "../Css/Footer.scss"
 
-const Footer = () => {
+import "../../Css/SocialBtn.scss"
+
+const SocialMedia = () => {
     return (
-        <div className="footer">
-            <div className="copyRights">
-                <h3>© Leaf && Chino - 2020</h3>
-            </div>
+        <div className="socialMedia">
+            <h3 className="socialTitle">Seguinos en nuestras redes sociales</h3>
             <div className="socialBar">
                 <FaFacebook className="socialIcon fac" />
-            </div>
-            <div className="socialBar">
                 <FaInstagram className="socialIcon ins" />
-            </div>
-            <div className="socialBar">
                 <FaTwitter className="socialIcon tw" />
-            </div>
-            <div className="credits">
-                <h3>Coded By Okubo</h3>
             </div>
         </div>
     )
 }
 
-export default Footer
+export default SocialMedia

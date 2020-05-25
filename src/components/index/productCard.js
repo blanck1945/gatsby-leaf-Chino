@@ -5,6 +5,7 @@ import "../../Css/ProductCard.scss"
 const CardDisplay = ({ data }) => {
 
     const {
+        id,
         title,
         price,
         image
@@ -19,7 +20,13 @@ const CardDisplay = ({ data }) => {
                 <h6 className="addTitle">{title}</h6>
                 <div className="addBox">
                     <h6 className="addPrice">${price}</h6>
-                    <button className="addBtn">Add to Chart</button>
+                    <button
+                        className="addBtn snipcart-add-item"
+                        data-item-id={id}
+                        data-item-price={price}
+                        data-item-url="https://leafandchino.netlify.app/shop"
+                        data-item-image={image.fluid.src}
+                        data-item-name={title}>Add to Chart</button>
                 </div>
             </div>
         </div>

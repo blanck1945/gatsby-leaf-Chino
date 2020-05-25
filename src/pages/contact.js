@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Board from "../components/contact/Board"
 import Banner from "../components/Banner"
 import Form from "../components/contact/Form"
+import SocialMedia from "../components/contact/SocialMedia"
 
 const Contact = (props) => {
   return (
@@ -21,6 +22,7 @@ const Contact = (props) => {
       <Banner header={"Our Costumers"} />
       <Board />
       <Form />
+      <SocialMedia />
     </Layout>
   )
 }

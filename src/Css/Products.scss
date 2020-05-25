@@ -5,9 +5,15 @@
   background-color: white;
   min-height: 600px;
   margin: auto;
+  padding: 25px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  @media (max-width: 1348px) {
+    padding: 0px;
+    width: 100%;
+  }
   .productTitle {
     font-family: "Great Vibes", cursive;
     margin-top: 25px;
@@ -20,5 +26,8 @@
     grid-template-columns: 400px 400px 400px;
     width: 100%;
     justify-content: space-around;
+    @media (max-width: 1348px) {
+      grid-template-columns: 500px 500px;
+    }
   }
 }

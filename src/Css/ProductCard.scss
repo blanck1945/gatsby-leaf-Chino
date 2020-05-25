@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 .productCard {
-  min-width: 400px;
-  min-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
   margin: 15px 0;
+  @media (max-width: 1348px) {
+    width: 350px;
+    min-height: 300px;
+  }
   .imageBox {
     width: 100%;
     min-height: 200px;
@@ -19,6 +23,9 @@
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 10px;
+    @media (max-width: 1348px) {
+      height: 90px;
+    }
     .addTitle {
       font-family: "Great Vibes", cursive;
       font-size: 2.6rem;
@@ -26,6 +33,9 @@
       margin-left: 5px;
       color: rgb(189, 121, 13);
       width: 95%;
+      @media (max-width: 1348px) {
+        font-size: 1.8rem;
+      }
     }
     .addBox {
       display: flex;
@@ -41,6 +51,9 @@
         text-align: center;
         font-family: "Great Vibes", cursive;
         color: rgb(189, 121, 13);
+        @media (max-width: 1348px) {
+          font-size: 1.8rem;
+        }
       }
       .addBtn {
         width: 160px;

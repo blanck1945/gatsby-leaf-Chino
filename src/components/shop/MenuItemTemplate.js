@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from "gatsby-image"
 
 
 const MenuItemTemplate = ({ data }) => {
@@ -13,7 +12,8 @@ const MenuItemTemplate = ({ data }) => {
             <div className="menuDesc">
                 <p>{data.node.description.description}</p>
                 <div className="addBox">
-                    <button className="chartBtn">Add to Chart</button>
+                    <button
+                        className="chartBtn"></button>
                 </div>
             </div> </div>)
 }

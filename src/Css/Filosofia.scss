@@ -27,8 +27,8 @@
     }
   }
   .photoFilo {
-    background-color: blue;
     width: 600px;
+    padding-right: 5px;
     @media (max-width: 750px) {
       width: 30%;
       height: 300px;

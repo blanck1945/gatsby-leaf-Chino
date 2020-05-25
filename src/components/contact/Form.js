@@ -15,7 +15,7 @@ const Form = () => {
 
                     </div>
                 </div>
-                <form action="" className="form"
+                <form className="form"
                     action="https://formspree.io/leafandchino1945@gmail.com"
                     method="POST">
                     <label htmlFor="name" className="labelForm">Name</label>

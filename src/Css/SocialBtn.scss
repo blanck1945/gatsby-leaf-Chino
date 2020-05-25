@@ -1,0 +1,67 @@
+.socialMedia {
+  width: 95%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  .socialTitle {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: rgb(65, 65, 65);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  .socialBar {
+    width: 500px;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    .socialIcon {
+      font-size: 3rem;
+      cursor: pointer;
+      border-radius: 20px;
+      width: 100px;
+      height: 100px;
+    }
+    .ins {
+      color: black;
+    }
+    .ins:hover {
+      color: #fff;
+      font-size: 220px;
+      line-height: 250px;
+      mix-blend-mode: difference;
+      border-radius: 50%;
+      transition: 0.5s ease-in-out;
+      vertical-align: middle;
+      background: radial-gradient(
+        circle at 30% 107%,
+        #97a1fd 0%,
+        #97e0fd 5%,
+        #49fdb2 45%,
+        #24d68c 60%,
+        #b7eb28 90%
+      );
+    }
+    .fac {
+      color: black;
+    }
+    .fac:hover {
+      background-color: #cdd37c;
+      mix-blend-mode: difference;
+      border-radius: 50%;
+      transition: 0.5s ease-in-out;
+    }
+    .tw:hover {
+      background-color: rgb(185, 128, 21);
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

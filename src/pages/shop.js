@@ -3,15 +3,12 @@ import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Banner from "../components/Banner"
-import Menu from "../components/Menu"
 import Products from "../components/index/Products"
 
 import "../Css/BackgroundImage.scss"
 
 const Shop = ({ data }) => {
 
-  const { menu } = data
   const { products } = data
 
   return (
@@ -25,8 +22,6 @@ const Shop = ({ data }) => {
         </div>
       </BackgroundImage>
       <Products data={products} />
-      <Banner header={"Menu"} />
-      <Menu data={menu} />
     </Layout>
   )
 }
